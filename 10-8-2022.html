@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
+    <link rel="stylesheet" href="/resources/demos/style.css"> 
+    <script>
+        $(function(){
+            $("#D1").accordion();
+        });
+        function r(){
+            document.getElementById("h").innerHTML="JQuery is a lightweight write less, do more JavaScript library.";
+        }
+        function r2(){
+            document.getElementById("h2").innerHTML="JavaScript is the Programming Language for the Web.JavaScript can update and change both HTML and CSS.JavaScript can calculate, manipulate and validate data.";
+        }
+        function r3(){
+            document.getElementById("h3").innerHTML="CSS stands for Cascading Style Sheets CSS describes how HTML elements are to be displayed"
+        }
+    </script>
+ <style>
+        #D1{
+            border: none;
+            background-color: rgb(229, 236, 236);
+            color: blue;
+        }
+        .a1:hover{
+            background-color: cadetblue;
+            color: blue;
+        }
+        p:hover{
+            color:crimson;
+
+        }
+        h1:hover{
+            color: rgb(125, 240, 68);
+        }
+        h1{
+            color: aqua;
+        }
+        .p1:hover{
+            color:yellowgreen;
+        }
+        .p{
+          text-align: center;  
+        }
+    </style>
+</head>
+<body>
+    <h1>Accordion</h1>
+    <div id="D1">
+    <button class="a1">Section-1</button>
+    <div>
+    <button class="p1" onclick="r()">JQuery</button>
+    <marquee direction="left">
+        <p id="h"></p>
+    </marquee>
+    </div>
+    <button class="a1">Section-2</button>
+    <div>
+    <button class="p1" onclick="r2()">JavaScript</button>
+    <marquee direction="left">
+        <p id="h2"></p>
+    </marquee>
+    </div>
+    <button class="a1">Section-3</button>
+    <div>
+    <button class="p1" onclick="r3()">Css</button>
+    <marquee direction="left">
+        <p id="h3"></p>
+    </marquee>
+    </div>
+
+    </div>
+</body>
+</html>
